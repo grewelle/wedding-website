@@ -241,32 +241,20 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 36.588137, lng: -121.958462};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    const location = {lat: 36.588137, lng: -121.958462};
+    const map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
-        scrollwheel: false
+        scrollwheel: false,
     });
 
-    var marker = new google.maps.Marker({
+    const marker = new google.maps.Marker({
         position: location,
-        map: map
+        map: map,
     });
 }
 
-function initBBSRMap() {
-    var la_fiesta = {lat: 36.588137, lng: -121.958462};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
-    });
 
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
-    });
-}
 
 // alert_markup
 function alert_markup(alert_type, msg) {
